@@ -1,11 +1,15 @@
 
-
+.hline {
+  width:100%;
+  height: 1px;
+  background: #eceeef;
+  margin-bottom: 30px;
+}
 
 #header {
   background-color: #717883;
   color: white;
   font-size: 50px;
-  font-weight: bold;
 }
 
 #front img {

@@ -9,6 +9,7 @@
   </head>
   <body>
 
+<!-- Begin Heading with image front vs back -->
 
     <div class="jumbotron" id="header">
       <div class="row">
@@ -22,12 +23,19 @@
       </div>
     </div>
 
-
+<!-- Begin Intro paragraph informing the user of the intent of this survey -->
     <div class="container">
         <div class="jumbotron">
             <h2>Where will your next career move take you?<h2>
             <p>Take this survey to help determine which side you should show the world. Answer the survey questions below and click on the submit button to review your prioriites and goals.</p>
         </div>
+      <p>
+        Would you like to see the results of your survey? Click on the submit survey answers below and an image with your track will appear. If you are interested in goal-setting information for this track and would like a letter sent to you with this information and more, please enter your name and address in the boxes below and we'll display your letter with track suggestion and goal-setting information then send it to you at the address you've indicated. Thanks for taking this survey!
+      </p>
+      <div class="hline" >
+        <p>&nbsp;</p>
+      </div>
+<!-- Begin letter with goals form -->
       <form>
         <div class="row">
           <div class="form-group col-xs-4">
@@ -46,12 +54,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="form-group col-xs-4">
+          <div class="form-group col-md-8">
             <label for="city">City</label>
             <input id="city" class="form-control" type="text" placeholder="City">
           </div>
-          <div class="form-group col-xs-3">
-            <div class="form-group">
+          <div class="form-group col-md-4">
               <label for="state">Select list:</label>
               <select class="form-control" id="state">
                   <option selected="selected">Oregon</option>
@@ -63,7 +70,7 @@
                 	<option value="CO">Colorado</option>
                 	<option value="CT">Connecticut</option>
                 	<option value="DE">Delaware</option>
-                	<option value="DC">District Of Columbia</option>
+                	<option value="DC">WA D.C.</option>
                 	<option value="FL">Florida</option>
                 	<option value="GA">Georgia</option>
                 	<option value="HI">Hawaii</option>
@@ -108,14 +115,13 @@
                 	<option value="WY">Wyoming</option>
                 </select>
             </div>
-            <div class="form-group col-xs-5">
+          </div>
+          <div class="row">
+            <div class="form-group col-md-3">
               <label for="zip">Zip Code</label>
               <input id="zip" class="form-control" type="text" placeholder="Zip Code">
             </div>
           </div>
-        </div>
-
-
       </form>
       <div class="row">
         <div id="monkey"class="col-sm-4 col-md-3">
