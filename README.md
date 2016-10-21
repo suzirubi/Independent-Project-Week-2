@@ -27,9 +27,10 @@ If prompted, you are able to discuss your code with an instructor using correct 
 5. program name
 6. description
 7. copyright and license information
-## Setup/Installation Requirements
 
-* [Visit my gh page](https://suzirubi.github.io/portfolioFix/)
+## Setup/Installation Requirements
+* [Visit my gh page for Indpendent Project #2](https://suzirubi.github.io/Independent-Project-Week-2/)
+* [Visit my gh page for Independent Project #1](https://suzirubi.github.io/portfolioFix/)
 
 ## Known Bugs
 
