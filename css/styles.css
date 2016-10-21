@@ -32,4 +32,5 @@ button {
 
 #monkey img {
   width: 100px;
+  padding-top: -10px;
 }
