@@ -34,7 +34,7 @@ If prompted, you are able to discuss your code with an instructor using correct 
 
 ## Known Bugs
 
-_Oh boy, where do I start? The biggest bug was the first folder I worked on. Somehow I deleted everything, I'm not sure if it was the extra branches I made to test index.html page, the way i named gh_pages incorrectly. I made the mistake of deleting the repository then POOOF! everything was messed up. I'm making a copy of the portfolioFix file before I do the gh-pages this time._
+_Functionality notes: This survey would use the javascript bootstrap helper for the states pull-down if I was comfortable enough with the methods needed to load and operate it (Grunt) _
 
 
 ## Technologies Used
