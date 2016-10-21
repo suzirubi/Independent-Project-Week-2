@@ -7,21 +7,15 @@ $(document).ready(function(){
   var calculate = function(whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput) {
     if ( NaN ) {
       alert("Please answer each question");
-    }
-
-
-    else
-
-    if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
+    } else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
       $("#userCareer").text("Your track is problaby back end");
     } else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput > 5) {
-      $("#userCareer").text("Your track is problaby back end");
+    $("#userCareer").text("Your track is problaby back end");
     } else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput >= 10) {
-      $("#userCareer").text("Still deciding");
-    } else {
-      (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12);
-      $("#userCareer").text("Do more research, but we'd have a beer with you and talk about it!");
-      }
+    $("#userCareer").text("Still deciding");
+    } else {(whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput >= 11 ) 
+    $("#userCareer").text("Do more research, but we'd have a beer with you and talk about it!");
+    }
   }
 
 
