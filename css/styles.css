@@ -1,18 +1,19 @@
-.imageHeader {
+
+
+
+#header {
   background-color: #717883;
   color: white;
-  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
 }
-.imageHeader img {
+
+#front img {
   width: 300px;
-  margin: 10px;
-}
-#front img {
   margin-left: 50px;
+  padding-bottom: 10px;
 }
-#front img {
-  margin-left: 50px;
-}
+
 #monkey img {
   width: 100px;
 }
