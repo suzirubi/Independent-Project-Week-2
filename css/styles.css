@@ -1,0 +1,15 @@
+.imageHeader {
+  background-color: #717883;
+  color: white;
+  align-items: center;
+}
+.imageHeader img {
+  width: 300px;
+  margin: 10px;
+}
+#front img {
+  margin-left: 50px;
+}
+#front img {
+  margin-left: 50px;
+}
