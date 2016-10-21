@@ -5,19 +5,22 @@ $(document).ready(function(){
 
 
   var calculate = function(whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput) {
+    if ( NaN ) {
+      alert("Please answer each question");
+    }
 
 
-if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
+    else
 
-$("#userCareerTrack").text("Your track is problaby back end");
-
+    if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
+      $("#userCareer").text("Your track is problaby back end");
     } else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput > 5) {
-      $("#userCareerTrack").text("Your track is problaby back end");
+      $("#userCareer").text("Your track is problaby back end");
     } else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput >= 10) {
-      $("#userCareerTrack").text("Still deciding");
-
+      $("#userCareer").text("Still deciding");
     } else {
-      $("#userCareerTrack").text("Do more research, but we'd have a beer with you and talk about it!");
+      (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12);
+      $("#userCareer").text("Do more research, but we'd have a beer with you and talk about it!");
       }
   }
 
@@ -34,8 +37,8 @@ $("#userCareerTrack").text("Your track is problaby back end");
 
 
 
-    calculate (userCareerTrack);
-    alert(userCareerTrack);
+    calculate (whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput);
+
     console.log(whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput);
 
 
