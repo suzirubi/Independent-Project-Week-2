@@ -54,3 +54,7 @@ button {
   padding-top: -10px;
   margin-left: 15px;
 }
+
+#letterDisplay {
+  display: none;
+}
