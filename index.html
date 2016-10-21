@@ -8,15 +8,13 @@
     <title>Developer Career Survey</title>
   </head>
   <body>
-
 <!-- Begin Heading with image front vs back -->
-
     <div class="jumbotron" id="header">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-2">
           <span>&nbsp;</span>
         </div>
-        <div id="front" class="col-md-10">
+        <div id="front" class="col-lg-10">
           <img src="img/front-end.png" alt="illustration of front view of people in underwear" class="image-responsive"/><span> &nbsp; &nbsp;VS
           <img src="img/back-end.png" alt="illustration of back view of people in underwear" class="image-responsive"/></span>
         </div>
@@ -27,38 +25,81 @@
     <div class="container">
         <div class="jumbotron">
             <h2>Where will your next career move take you?<h2>
-            <p>Take this survey to help determine which side you should show the world. Answer the survey questions below and click on the submit button to review your prioriites and goals.</p>
+            <p>As a student in the <strong>Epicodus</strong> <i>"Intro to Programming"</i> class you may be wondering which type of track to choose: <a href="http://www.merriam-webster.com/dictionary/front%20end">front end</a> or <a href="http://searchdatacenter.techtarget.com/definition/back-end">back end</a>. Take this survey to help determine which side to show the world. Answer the survey questions below and click on the submit button for suggested tracks. To further review your prioriites and goal-setting for this track fill in the address fields below and submit that.</p>
         </div>
-      <p>
-        Would you like to see the results of your survey? Click on the submit survey answers below and an image with your track will appear. If you are interested in goal-setting information for this track and would like a letter sent to you with this information and more, please enter your name and address in the boxes below and we'll display your letter with track suggestion and goal-setting information then send it to you at the address you've indicated. Thanks for taking this survey!
-      </p>
+<!-- Begin Form with 5 career tracker questions -->
+      <form id="careerTrack">
+        <label for="whatEnjoyWeek1">What did you enjoy most about week one?</label>
+        <select id="whatEnjoyWeek1" class="form-control form-control-lg">
+          <option>I really liked...</option>
+          <option value="1">Making the project look good and function properly</option>
+          <option value="2">Adding extra functions to the project</option>
+          <option value="3">Both!</option>
+        </select><br>
+        <label for="whatEnjoyWeek2">What did you enjoy most about week two?</label>
+        <select id="whatEnjoyWeek2" class="form-control form-control-lg">
+          <option>The best thing about week 2 was...</option>
+          <option value="2">Solving the business logic projects in as efficient way as possible</option>
+          <option value="1">Getting the business logic to interact within the javascript and with the html and css properly</option>
+          <option value="4">Making them both work and providing classmates with an enjoyable form submittal process</option>
+          <option value="3">All three</option>
+        </select><br>
+        <label for="courseDes">What sounds better to you...</label>
+        <select id="courseDes" class="form-control form-control-lg">
+          <option>I think this would be great...</option>
+          <option value="2">Having more problems to solve and the advanced tools to solve them with</option>
+          <option value="1">Cultivating basic design principles and helping users to enjoy their experience</option>
+          <option value="1">Both</option>
+        </select><br>
+        <label for="workQues">Where would you rather work</label>
+        <select id="workQues" class="form-control form-control-lg">
+          <option>I hope to work at a place like...</option>
+          <option value="2">sq2</option>
+          <option value="1">Intel</option>
+          <option value="2">Ebay</option>
+          <option value="3">Neither</option>
+        </select><br>
+        <label for="salaryQues">What would you like your annual gross income to be?</label>
+        <select id="salaryQues" class="form-control form-control-lg">
+          <option>I hope to make...</option>
+          <option value="2">over $75,000</option>
+          <option value="1">At least $60,000</option>
+          <option value="3">Any salary sounds good right now!</option>
+        </select><br>
+        <button type="submit" class="btn btn-primary">A suggested track for you...</button><br>
+      </form>
+      <p>&nbsp;</p>
       <div class="hline" >
         <p>&nbsp;</p>
       </div>
+      <p>
+        Would you like to see the results of your survey? Click on the submit survey answers below and an image with your track will appear. If you are interested in goal-setting information for this track and would like a letter sent to you with this information and more, please enter your name and address in the boxes below and we'll display your letter with track suggestion and goal-setting information then send it to you at the address you've indicated. Thanks for taking this survey!
+      </p>
+
 <!-- Begin letter with goals form -->
-      <form>
+      <form id="letter">
         <div class="row">
-          <div class="form-group col-xs-4">
+          <div class="form-group col-lg-4">
             <label for="firstName">Enter your first name</label>
             <input id="firstName" class="form-control" type="text" placeholder="First Name">
           </div>
-          <div class="form-group col-xs-7">
+          <div class="form-group col-lg-8">
             <label for="lastName">Enter your last name</label>
             <input id="lastName" class="form-control" type="text" placeholder="Last Name">
           </div>
         </div>
         <div class="row">
-          <div class="form-group col-xs-8">
+          <div class="form-group col-lg-8">
             <label for="street">Enter your street address</label>
             <input id="street" class="form-control" type="text" placeholder="Street Address">
           </div>
         </div>
         <div class="row">
-          <div class="form-group col-md-8">
+          <div class="form-group col-lg-8">
             <label for="city">City</label>
             <input id="city" class="form-control" type="text" placeholder="City">
           </div>
-          <div class="form-group col-md-4">
+          <div class="form-group col-lg-4">
               <label for="state">Select list:</label>
               <select class="form-control" id="state">
                   <option selected="selected">Oregon</option>
@@ -117,14 +158,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-md-3">
+            <div class="form-group col-lg-3">
               <label for="zip">Zip Code</label>
               <input id="zip" class="form-control" type="text" placeholder="Zip Code">
             </div>
           </div>
       </form>
       <div class="row">
-        <div id="monkey"class="col-sm-4 col-md-3">
+        <div id="monkey"class="col-lg-4">
               <img src="img/monkeyIcon.png" alt="monkey graphic" class="image-responsive"/>
         </div>
       </div>
