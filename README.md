@@ -1,4 +1,4 @@
-# Individual Project -- Survey
+# Individual Project - Survey
 
 ### _Independent project for Epicodus, 10-20-16_
 
