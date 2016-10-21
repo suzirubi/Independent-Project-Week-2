@@ -78,7 +78,7 @@
         <p>Would you like to see your result from the survey above along with information on how to pursue your career goals? Click on the "show me goal-setting for my track..." button below and customized goal-setting information for this track will be generated. Thanks for taking this survey!</p>
       </div>
 
-<!-- Begin letter with goals form -->
+<!-- Begin letter form input -->
       <form id="letter">
         <div class="row">
           <div class="form-group col-lg-4">
@@ -159,35 +159,43 @@
                 </select>
             </div>
           </div>
-          <div class="row">
-            <div class="form-group col-md-2">
-              <label for="zip">Zip Code</label>
-              <input id="zip" class="form-control" type="text" placeholder="Zip Code">
+            <div class="row">
+              <div class="form-group col-lg-2">
+                <label for="zip">Zip Code</label>
+                <input id="zip" class="form-control" type="text" placeholder="Zip Code">
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <button type="submit" class="btn btn-primary">Show me goal-setting for my track...</button><br>
+              </div>
             </div>
-          </div><br>
-        <button type="submit" class="btn btn-primary">Show me goal-setting for my track...</button><br>
+          </form>
+<!-- End letter form input -->
+          <div class="row" id="letterDisplay">
+            <div class="col-lg-12">
+              <p id="date"><!--Drops in today's date--></p>
+              <p><span class="adressee"></span><br>
+              <span class="street"></span><br>
+              <span class="city"></span>,<span class="state"></span>  <span class="zip"></span></p>
+
+              <p><br>Dear <span class="adressee"></span>,</p>
+
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                <p>Sincerly,</p>
+
+                <p><br>Suzi Rubino</p>
+              </div>
+            </div>
+          </div>
+      <p>&nbsp;</p>
+      <div class="hline" >
         <p>&nbsp;</p>
-        <div class="hline" >
-          <p>&nbsp;</p>
-        </div>
-        <div id="letterDisplay">
-          <p id="date"><!--Drops in today's date--></p>
-          <p><span class="adressee"></span><br>
-          <span class="street"></span><br>
-          <span class="city"></span>,<span class="state"></span>  <span class="zip"></span></p>
+      </div>
 
-          <p><br>Dear <span class="adressee"></span>,</p>
+    </div>
 
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-          <p>Sincerly,</p>
-
-          <p><br>Suzi Rubino</p>
-        </div>
-
-
-        </div>
-      </form>
 <!-- Begin footer -->
       <div class="row">
         <div id="monkey"class="col-lg-12">

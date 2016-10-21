@@ -65,12 +65,13 @@ $(document).ready(function(){
     var stateInput = $("input#state").val();
     var zipInput = $("input#zip").val();
 
-    $(".adressee").text(adresseeInput);
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
     $(".street").text(streetInput);
     $(".city").text(cityInput);
     $(".state").text(stateInput);
     $(".zip").text(zipInput);
-
+    console.log();
     $("#letterDisplay").show();
 
     event.preventDefault();
