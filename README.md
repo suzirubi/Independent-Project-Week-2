@@ -2,7 +2,7 @@
 
 ### _Independent project for Epicodus, 10-20-16_
 
-#### By _**Suzi Rubino
+#### By _**Suzi Rubino**_
 
 ## Description
 
