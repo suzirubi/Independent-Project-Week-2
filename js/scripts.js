@@ -12,15 +12,15 @@ $(document).ready(function(){
       $("#userCareer").text("Your track is problaby front end");
       $("#userCareer").show();
     }
-     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
+     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 10) {
       $("#userCareer").text("Your track is problaby back end");
       $("#userCareer").show();
     }
-     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 10) {
+     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12) {
       $("#userCareer").text("Looks like you are still trying to make up your mind!");
       $("#userCareer").show();
     }
-     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12) {
+     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 17) {
       $("#userCareer").text("Looks like you are still trying to make up your mind, make sure and attend all the speaker sessions and network!");
       $("#userCareer").show();
     }
