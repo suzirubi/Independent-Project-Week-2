@@ -1,14 +1,11 @@
-# Individual Project - Survey
+# Individual Project Week 2: Survey
 
-### _Independent project for Epicodus, 10-20-16_
+### _Epicodus Introduction to Programming, 10-20-16_
 
 #### By _**Suzi Rubino**_
 
 ## Description
-
-The instructions for contents of this project were as follows, with my additions noted in italics:
-Your code will be reviewed for the following objectives:
-
+The instructions for contents of this project were as follows:
 * All previous standards (last week's independent project objectives) are in place (see below).
 * Site uses branching to return the result.
 * jQuery is used to show and hide the result after questions are answered and submitted.
@@ -16,8 +13,8 @@ Your code will be reviewed for the following objectives:
 * Variable names are descriptive of what they represent.
 * Web page is styled using Bootstrap and custom CSS.
 * The project is in a presentable, portfolio-quality state.
-* Project demonstrates understanding of concepts covered this week. 
-If prompted, you are able to discuss your code with an instructor using correct terminology.
+* Project demonstrates understanding of concepts covered this week.
+* Ability to discuss code with instructor, using the correct terminology, if applicable
 
 ### Previous Objectives
 1. Code has proper indentation and spacing.
@@ -33,7 +30,6 @@ If prompted, you are able to discuss your code with an instructor using correct 
 * [Visit my gh page for Independent Project #1](https://suzirubi.github.io/portfolioFix/)
 
 ## Known Bugs
-
 _Functionality notes: This survey would use the javascript bootstrap helper for the states pull-down if I was comfortable enough with the methods needed to load and operate it (Grunt) _
 
 
@@ -41,8 +37,8 @@ _Functionality notes: This survey would use the javascript bootstrap helper for 
 
 1. html
 2. github
-3. css
-4. bootstrap css
+3. custom and bootstrap cascading style sheets
+4. custom and jQuery javascript
 
 ## Copyright and license information
 
