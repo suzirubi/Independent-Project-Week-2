@@ -70,13 +70,13 @@ $(document).ready(function() {
     var cityInput = $("input#city").val();
     var stateInput = $("select#state").val();
     var zipInput = $("input#zip").val();
-    console.log(firstNameInput, lastNameInput, streetInput, cityInput, stateInput, zipInput);
-    $("#firstName").text(firstNameInput);
-    $("#lastName").text(lastNameInput);
-    $("#street").text(streetInput);
-    $("#city").text(cityInput);
-    $("#state").text(stateInput);
-    $("#zip").text(zipInput);
+
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
+    $(".street").text(streetInput);
+    $(".city").text(cityInput);
+    $(".state").text(stateInput);
+    $(".zip").text(zipInput);
 
 
     $("#letterDisplay").show();
