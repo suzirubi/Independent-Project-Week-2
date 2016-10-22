@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 //Begin form submit code for career track survey
   $("form#careerTrack").submit(function(event) {
-        event.preventDefault();
+    event.preventDefault();
     var whatEnjoyWeek1Input = parseInt($("select#whatEnjoyWeek1").val());
     var whatEnjoyWeek2Input = parseInt($("select#whatEnjoyWeek2").val());
     var courseDesInput = parseInt($("select#courseDes").val());
@@ -60,31 +60,28 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
 //Begin form submit code for letter to fellow student
 
-  $("#letter form").submit(function(event) {
+  $("form#letter").submit(function(event) {
+    event.preventDefault();
     var firstNameInput = $("input#firstName").val();
     var lastNameInput = $("input#lastName").val();
     var streetInput = $("input#street").val();
     var cityInput = $("input#city").val();
-    var stateInput = $("input#state").val();
+    var stateInput = $("select#state").val();
     var zipInput = $("input#zip").val();
+    console.log(firstNameInput, lastNameInput, streetInput, cityInput, stateInput, zipInput);
+    $("#firstName").text(firstNameInput);
+    $("#lastName").text(lastNameInput);
+    $("#street").text(streetInput);
+    $("#city").text(cityInput);
+    $("#state").text(stateInput);
+    $("#zip").text(zipInput);
 
-    $(".firstName").text(firstNameInput);
-    $(".lastName").text(lastNameInput);
-    $(".street").text(streetInput);
-    $(".city").text(cityInput);
-    $(".state").text(stateInput);
-    $(".zip").text(zipInput);
-    console.log();
+
     $("#letterDisplay").show();
 
-    event.preventDefault();
+
   });
 
 
