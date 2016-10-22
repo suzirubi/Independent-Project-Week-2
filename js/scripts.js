@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 //move this function to business logic and assign var to function to call down here
   var userCareerTrack;
 
@@ -31,6 +31,18 @@ $(document).ready(function(){
     }
   }
 
+  var now = new Date();
+  var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+  function fourdigits(number) {
+      return (number < 1000) ? number + 1900 : number;
+    }
+  today =  months[now.getMonth()] + " " +
+           date + ", " +
+           (fourdigits(now.getYear())) ;
+  document.getElementById("date").innerHTML = today;
+
+
 
 
 //Begin form submit code for career track survey
@@ -42,18 +54,16 @@ $(document).ready(function(){
     var workQuesInput = parseInt($("select#workQues").val());
     var salaryQuesInput = parseInt($("select#salaryQues").val());
 
-
-
     calculate (whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput);
 
-
-
-    console.log(whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput);
-
-
-
-
   });
+
+
+
+
+
+
+
 
 //Begin form submit code for letter to fellow student
 
@@ -76,17 +86,6 @@ $(document).ready(function(){
 
     event.preventDefault();
   });
-
-var now = new Date();
-var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-function fourdigits(number) {
-    return (number < 1000) ? number + 1900 : number;
-  }
-today =  months[now.getMonth()] + " " +
-         date + ", " +
-         (fourdigits(now.getYear())) ;
-document.getElementById("date").innerHTML = today;
 
 
 
