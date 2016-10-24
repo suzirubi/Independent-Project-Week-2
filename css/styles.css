@@ -27,22 +27,32 @@ button {
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+    border: 0px;
+}
+.btn-primary:active:focus {
+  color: #ffffff;
+  background-color: #d2aa48;
+  outline: 0 none;
+  border: 0px;
 }
 
 .btn-primary {
     background: #be8a3f;
     color: #ffffff;
-    border-color: #be8a3f;
+    outline: 0 none;
+    border: 0px;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:visited, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #be8a3f;
+    background: #d2aa48;
+    outline: 0 none;
     border-color: 0 none;
 }
 
 .btn-primary:active, .btn-primary.active {
     background: #be8a3f;
     box-shadow: none;
+    outline: 0 none;
     border-color: 0 none;
 }
 .hline {
