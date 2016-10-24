@@ -10,6 +10,7 @@ $(document).ready(function() {
       alert("Please answer each question");
     }
     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
+      $(".careerTrackBlock").show();  
       $("#userCareerFront").text("Your track is problaby front end: CSS/Design.");
       $("#userCareerFront").show();
       $("#userCareerPHP").hide();
@@ -17,6 +18,7 @@ $(document).ready(function() {
       $("#userCareer").hide();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 10) {
+      $(".careerTrackBlock").show();
       $("#userCareerPHP").text("Your track is problaby back end, leaning towards data-driven sites. Try PHP/Drupal");
       $("#userCareerPHP").show();
       $("#userCareerFront").hide();
@@ -24,15 +26,17 @@ $(document).ready(function() {
       $("#userCareer").hide();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12) {
-       $("#userCareerRuby").text("You are probably back end, leaning towards Ruby/Rails");
-       $("#userCareerRuby").show();
-       $("#userCareerFront").hide();
-       $("#userCareerPHP").hide();
-       $("#userCareer").hide();
+      $(".careerTrackBlock").show();
+      $("#userCareerRuby").text("You are probably back end, leaning towards Ruby/Rails");
+      $("#userCareerRuby").show();
+      $("#userCareerFront").hide();
+      $("#userCareerPHP").hide();
+      $("#userCareer").hide();
 
     }
      else {
        (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 17 );
+       $(".careerTrackBlock").show();
        $("#userCareer").text("Looks like you are still trying to make up your mind");
        $("#userCareer").show();
        $("#userCareerRuby").hide();
