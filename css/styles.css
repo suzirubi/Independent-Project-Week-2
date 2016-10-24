@@ -52,57 +52,38 @@ button {
   margin-bottom: 30px;
 }
 
-#userCareer {
-  display: none;
+.careerTrackBlock {
   color: #3b717d;
   font-weight: bold;
   height: 200px;
   background: #eceeef;
-  background-image: none;
   margin-top: 20px;
   padding: 10px;
+}
+
+#userCareer {
+  display: none;
 }
 
 #userCareerFront {
   display: none;
-  color: #3b717d;
-  font-weight: bold;
-  height: 200px;
-  background: #eceeef;
   background-image: url("../img/front-end.png");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  margin-top: 20px;
-  padding: 10px;
 }
 
 #userCareerPHP {
   display: none;
-  color: #3b717d;
-  font-weight: bold;
-  height: 200px;
-  background: #eceeef;
   background-image: url("../img/back-end.png");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  margin-top: 20px;
-  padding: 10px;
 }
 
 #userCareerRuby {
   display: none;
-  color: #3b717d;
-  font-weight: bold;
-  height: 200px;
-  background: #eceeef;
   background-image: url("../img/back-end.png");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  margin-top: 20px;
-  padding: 10px;
 }
 
 #italicLetter {
