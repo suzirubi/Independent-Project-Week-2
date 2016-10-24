@@ -1,10 +1,11 @@
 $(document).ready(function() {
-//move this function to business logic and assign var to function to call down here
-  var userCareerTrack;
+
+// business logic
 
 
 
   var calculate = function(whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput) {
+
     if (!whatEnjoyWeek1Input || !whatEnjoyWeek2Input || !courseDesInput || !workQuesInput || !salaryQuesInput) {
       alert("Please answer each question");
     }
@@ -29,6 +30,9 @@ $(document).ready(function() {
         $("#userCareer").text("Do more research, but we'd like to have a beer with you and talk about it!");
         $("#userCareer").show();
     }
+
+    console.log(whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput);
+
   }
 
   var now = new Date();
@@ -56,6 +60,7 @@ $(document).ready(function() {
 
     calculate (whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput);
 
+
   });
 
 
@@ -64,6 +69,7 @@ $(document).ready(function() {
 
   $("form#letter").submit(function(event) {
     event.preventDefault();
+
     var firstNameInput = $("input#firstName").val();
     var lastNameInput = $("input#lastName").val();
     var streetInput = $("input#street").val();

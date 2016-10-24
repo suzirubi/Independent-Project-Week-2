@@ -1,6 +1,0 @@
-if (!whatEnjoyWeek1Input || !whatEnjoyWeek2Input || !courseDesInput || !workQuesInput || !salaryQuesInput) {
-  alert("Please answer each question");
-}
-
-
-else 

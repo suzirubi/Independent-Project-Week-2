@@ -1,25 +1,21 @@
+
+#fullWidthBar {
+
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: #717883;
+  color: #fff;
+  font-size: 40px;
+}
+
 .jumbotron p {
   line-height: 1.5;
 }
 
-.hline {
-  width:100%;
-  height: 1px;
-  background: #eceeef;
-  margin-bottom: 30px;
-}
-
-#header {
-  background-color: #717883;
-  color: white;
-  font-size: 50px;
-}
-
 #front img {
-  width: 300px;
+  width: 400px;
   margin-left: 50px;
-  padding-top: 10px;
-  padding-bottom: 5px;
 }
 
 .btn-primary {
@@ -28,6 +24,13 @@
 }
 
 button {
+  margin-bottom: 30px;
+}
+
+.hline {
+  width:100%;
+  height: 1px;
+  background: #eceeef;
   margin-bottom: 30px;
 }
 
