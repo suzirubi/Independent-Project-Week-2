@@ -10,21 +10,34 @@ $(document).ready(function() {
       alert("Please answer each question");
     }
     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 5) {
-      $("#userCareer").text("Your track is problaby front end");
-      $("#userCareer").show();
+      $("#userCareerFront").text("Your track is problaby front end: CSS/Design.");
+      $("#userCareerFront").show();
+      $("#userCareerPHP").hide();
+      $("#userCareerRuby").hide();
+      $("#userCareer").hide();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 10) {
-      $("#userCareer").text("Your track is problaby back end, leaning towards data-driven sites. Try PHP/Drupal");
-      $("#userCareer").show();
+      $("#userCareerPHP").text("Your track is problaby back end, leaning towards data-driven sites. Try PHP/Drupal");
+      $("#userCareerPHP").show();
+      $("#userCareerFront").hide();
+      $("#userCareerRuby").hide();
+      $("#userCareer").hide();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12) {
-      $("#userCareer").text("You are probably back end, leaning towards Ruby/Rails");
-      $("#userCareer").show();
+       $("#userCareerRuby").text("You are probably back end, leaning towards Ruby/Rails");
+       $("#userCareerRuby").show();
+       $("#userCareerFront").hide();
+       $("#userCareerPHP").hide();
+       $("#userCareer").hide();
+
     }
      else {
        (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 17 );
-        $("#userCareer").text("Looks like you are still trying to make up your mind");
-        $("#userCareer").show();
+       $("#userCareer").text("Looks like you are still trying to make up your mind");
+       $("#userCareer").show();
+       $("#userCareerRuby").hide();
+       $("#userCareerFront").hide();
+       $("#userCareerPHP").hide();
     }
 
     console.log(whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput);
@@ -54,7 +67,10 @@ $(document).ready(function() {
     var workQuesInput = parseInt($("select#workQues").val());
     var salaryQuesInput = parseInt($("select#salaryQues").val());
 
+
     calculate (whatEnjoyWeek1Input, whatEnjoyWeek2Input, courseDesInput, workQuesInput, salaryQuesInput);
+
+
 
 
   });
@@ -83,7 +99,7 @@ $(document).ready(function() {
     console.log(firstNameInput, lastNameInput, streetInput, cityInput, stateInput, zipInput);
 
     if (!firstNameInput || !lastNameInput || !streetInput || !cityInput || !stateInput || !zipInput) {
-      alert("Pleased fill in all fields above.");
+      alert("Pleased fill in all fields.");
     }
 
     $("#letterDisplay").show();
