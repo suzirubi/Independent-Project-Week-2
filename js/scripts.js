@@ -14,20 +14,16 @@ $(document).ready(function() {
       $("#userCareer").show();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 10) {
-      $("#userCareer").text("Your track is problaby back end");
+      $("#userCareer").text("Your track is problaby back end, leaning towards data-driven sites. Try PHP/Drupal");
       $("#userCareer").show();
     }
      else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 12) {
-      $("#userCareer").text("Looks like you are still trying to make up your mind!");
-      $("#userCareer").show();
-    }
-     else if (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 17) {
-      $("#userCareer").text("Looks like you are still trying to make up your mind, make sure and attend all the speaker sessions and network!");
+      $("#userCareer").text("You are probably back end, leaning towards Ruby/Rails");
       $("#userCareer").show();
     }
      else {
        (whatEnjoyWeek1Input + whatEnjoyWeek2Input + courseDesInput + workQuesInput + salaryQuesInput <= 17 );
-        $("#userCareer").text("Do more research, but we'd like to have a beer with you and talk about it!");
+        $("#userCareer").text("Looks like you are still trying to make up your mind");
         $("#userCareer").show();
     }
 
@@ -84,6 +80,11 @@ $(document).ready(function() {
     $(".state").text(stateInput);
     $(".zip").text(zipInput);
 
+    console.log(firstNameInput, lastNameInput, streetInput, cityInput, stateInput, zipInput);
+
+    if (!firstNameInput || !lastNameInput || !streetInput || !cityInput || !stateInput || !zipInput) {
+      alert("Pleased fill in all fields above.");
+    }
 
     $("#letterDisplay").show();
 

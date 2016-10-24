@@ -19,13 +19,11 @@
         </div>
       </div>
       <div class="jumbotron">
-
-
 <!-- Begin Intro paragraph informing the user of the intent of this survey -->
         <div class="row">
           <div class="col-lg-12">
             <h2>Where will your next career move take you?<h2>
-            <p>As a student in the <strong>Epicodus</strong> <i>"Intro to Programming"</i> class you may be wondering which type of track to choose: <a href="http://www.merriam-webster.com/dictionary/front%20end">front end</a> or <a href="http://searchdatacenter.techtarget.com/definition/back-end">back end</a>. Take this survey to help determine which side to show the world. Answer the survey questions below and click on the submit button for suggested tracks. To further review your prioriites and goal-setting for this track fill in the address fields below and view your custom letter with information on how to pursue these career goals.</p>
+            <p>As a student in the <strong>Epicodus</strong> <i>"Intro to Programming"</i> class you may be wondering which track to choose: CSS/Design, Ruby/Rails or PHP/Drupal. Take this survey to help determine which side to show the world (front or back end) and what type of company to work for. Answer the survey questions below and click on the submit button for suggested tracks. To learn custom goal-setting for your projected track fill in your name and address and then click "show me goal-setting for my suggested track". Thanks for taking this survey!</p>
           </div>
         </div>
       </div>
@@ -35,38 +33,37 @@
         <select id="whatEnjoyWeek1" class="form-control">
           <option>I really liked...</option>
           <option value="1">Making the project look good and function properly</option>
-          <option value="2">Adding extra functions to the project</option>
-          <option value="3">Both!</option>
+          <option value="3">Adding extra functionality to the project</option>
+          <option value="2">Storing and displaying my work on github</option>
         </select><br>
         <label for="whatEnjoyWeek2">What did you enjoy most about week two?</label>
         <select id="whatEnjoyWeek2" class="form-control">
           <option>The best thing about week 2 was...</option>
-          <option value="2">Solving the business logic projects in as efficient way as possible, with as little code as possible</option>
-          <option value="1">Getting the business logic to interact within the javascript and with the html and css properly</option>
-          <option value="1">Making them both work and providing classmates with an enjoyable form submittal process</option>
-          <option value="3">All three</option>
+          <option value="2">Solving the business logic problems with as little code as possible</option>
+          <option value="1">Providing classmates with an intuitive, entertaining and attractive UI/UX</option>
+          <option value="3">Both!</option>
         </select><br>
         <label for="courseDes">What sounds better to you...</label>
         <select id="courseDes" class="form-control">
-          <option>I think this would be great...</option>
-          <option value="2">Having more problems to solve and the advanced tools to solve them with</option>
+          <option>This sounds perfect...</option>
+          <option value="3">Having more problems to solve and the advanced tools to solve them with</option>
           <option value="1">Cultivating basic design principles and helping users to enjoy their experience</option>
-          <option value="3">Both</option>
+          <option value="2">Working for a company with a global digital presence</option>
         </select><br>
         <label for="workQues">Where would you rather work</label>
         <select id="workQues" class="form-control">
           <option>I hope to work at a place like...</option>
           <option value="1">sq2</option>
           <option value="2">Intel</option>
-          <option value="2">Ebay</option>
+          <option value="3">Airbnb</option>
           <option value="4">None of the above</option>
         </select><br>
         <label for="salaryQues">What would you like your annual gross income to be?</label>
         <select id="salaryQues" class="form-control">
           <option>I hope to make...</option>
           <option value="2">over $75,000</option>
-          <option value="1">At least $60,000</option>
-          <option value="3">Any salary sounds good right now!</option>
+          <option value="1">At least $40,000</option>
+          <option value="4">Any salary sounds good right now!</option>
           <option value="4">More than Warren Buffett</option>
         </select><br>
         <button type="submit" class="btn btn-primary">A suggested track for you...</button><br>
@@ -82,7 +79,7 @@
         <p>&nbsp;</p>
       </div>
       <div id="italicLetter">
-        <p>Would you like to see your result from the survey above along with information on how to pursue your career goals? Fill in the information below and then click on the "show me goal-setting for my track..." button below, <i>volia</i>, customized goal-setting information for this track will be generated. Thanks for taking this survey!</p>
+        <p>Would you like to see your result from the survey above along with information on how to pursue your career goals? Fill in the information below and then click on the "show me goal-setting for my track..." button below and, <i>volia</i>, customized goal-setting information for this track will be generated. Thanks for taking this survey!</p>
       </div>
 
 <!-- Begin letter form input -->
@@ -186,7 +183,7 @@
 
             <p><br>Dear <span class="firstName"></span>,</p>
 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p><span id="userCareer"></span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
             <p>Sincerly,</p>
 
