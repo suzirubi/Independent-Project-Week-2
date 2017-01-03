@@ -26,8 +26,8 @@ The instructions for contents of this project were as follows:
 7. copyright and license information
 
 ## Setup/Installation Requirements
-* [Visit my gh page for Indpendent Project #2](https://suzirubi.github.io/Independent-Project-Week-2/)
-* [Visit my gh page for Independent Project #1](https://suzirubi.github.io/portfolioFix/)
+* [Visit my gh page for Indpendent Project #2](https://rawgit.com/suzirubi/Independent-Project-Week-2/master/index.html)
+* [Visit my gh page for Independent Project #1](https://rawgit.com/suzirubi/portfolio-project/master/index.html)
 
 ## Known Bugs
 _Functionality notes: This survey would use the javascript bootstrap helper for the states pull-down if I was comfortable enough with the methods needed to load and operate it (Grunt) _
